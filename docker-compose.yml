@@ -1,0 +1,16 @@
+version: "3.9"
+services:
+  service1:
+    build:
+      context: ./dockercompose/service1
+      dockerfile: Dockerfile
+    ports: 
+      - "8001:8001"
+    volumes:
+      - /node_modules
+  service2:
+    build:
+      context: ./dockercompose/service2
+      dockerfile: Dockerfile
+    volumes:
+      - /node_modules
