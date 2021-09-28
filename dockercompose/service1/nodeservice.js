@@ -4,7 +4,7 @@ var app = express()
 
 
 const options = {
-    hostname: 'localhost',
+    hostname: 'service2',
     port: 3001,
     path: '/service2',
     method: 'GET'
