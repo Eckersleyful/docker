@@ -1,1 +1,1 @@
-# Type cd dockercompose and then run docker-compose up --build
+# Change to the working dir with docker-compose.yml and run docker-compose up --build
