@@ -23,10 +23,10 @@ app.get("/service1", (req, res, next) => {
             console.log(d)
         });
         res.on('error', e => {
-            console.error(e)
+            console.error(e) 
         });
     });
-    request.on('error', error => {
+    request.on('error', error => { 
         console.error(error)
     })
     request.end()
