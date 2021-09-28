@@ -6,7 +6,7 @@ var app = express()
 const options = {
     hostname: 'service2',
     port: 3001,
-    path: '/service2',
+    path: '/',
     method: 'GET'
 }
 
@@ -15,7 +15,7 @@ app.listen(8001, () => {
 });
 
 
-app.get("/service1", (req, res, next) => {
+app.get("/", (req, res, next) => {
     console.log("Hello from " + req.client.remoteAddress + ":" + req.client.remotePort);
     console.log("to " + req.client.localAddress + ":" + req.client.localPort);
     const request = http.request(options, res => {

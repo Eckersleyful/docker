@@ -5,7 +5,7 @@ app.listen(3001, () => {
     console.log("up")
 });
  
-app.get("/service2", (req, res, next) => {
+app.get("/", (req, res, next) => {
     console.log("Hello from " + req.client.remoteAddress + ":" + req.client.remotePort);
     console.log("to " + req.client.localAddress + ":" + req.client.localPort);
     res.status(201)
