@@ -12,7 +12,5 @@ services:
     build:
       context: ./service2
       dockerfile: Dockerfile
-    ports: 
-      - "3001:3001"
     volumes:
       - /node_modules
